@@ -1,3 +1,10 @@
+#main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
+
 /* .counter {
   font-size: 16px;
   padding: 5px 10px;
