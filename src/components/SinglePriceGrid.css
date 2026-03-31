@@ -1,6 +1,4 @@
-.SinglePriceGrid {
-  /* border: 1px solid var(--fc-green-500); */
-  /* padding: 10px; */
+.single-price-grid {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   margin-left: 5%;
@@ -15,17 +13,6 @@
 
   transition: width 0.5s ease-in;
 
-  /* box-shadow: 10px 10px 5px lightblue; */
-
-  /* border-radius: 20px; */
-  /* font-family: "Karla", sans-serif;
-  font-optical-sizing: auto; */
-  /* .karla-<uniquifier> {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  } */
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr;
   grid-template-areas:
@@ -35,7 +22,7 @@
 }
 
 .header {
-  padding: 40px;
+  padding: 30px 40px 0px 40px;
 
   grid-area: header;
   display: grid;
@@ -60,70 +47,77 @@
   font-size: var(--fs-regular);
 }
 
-.sign_up {
+.sign-up {
   background-color: var(--fc-teal-500-darker);
   padding: 40px;
+  max-height: 400px;
   color: #fff;
-  font-weight: var(--fw-bold);
+  padding-top: 20px;
 
   grid-area: price;
+  display: grid;
+  gap: 10px;
 }
 
-.sign-up-heading {
+.sign-up__heading {
+  top: 0;
+
   font-size: var(--fs-sub-heading);
 }
 
-.sign-up-pricing > * {
+.sign-up__pricing > * {
   vertical-align: middle;
 }
 
-.sign-up-pricing-cost {
+.sign-up__pricing-cost {
   display: inline-block;
-  font-size: 3em;
+  font-size: 2em;
 }
 
-.sign-up-pricing-month {
+.sign-up__pricing-month {
   color: var(--fc-teal-100);
 }
 
 .sign_up__description {
-  font-size: var(--fs-sub-heading);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-regular);
 }
 
-.sign_up__button {
+.sign-up__button {
   background-color: var(--fc-green-400);
   color: var(--fc-teal-100);
   border: none;
   width: 100%;
   padding: 10px;
   border-radius: 6px;
-  margin-top: 40px;
+  font-size: var(--fs-regular);
 }
 
 .why-us {
+  max-height: 400px;
   background-color: var(--fc-teal-500);
   color: #fff;
   padding: 40px;
+  padding-top: 20px;
 
   grid-area: why-us;
   display: grid;
   align-items: center;
-  gap: 12px;
+  align-content: center;
+  gap: 20px;
 }
 
 .why-us__heading {
-  font-weight: var(--fw-bold);
   font-size: var(--fs-sub-heading);
 }
 
-.why-us_description {
-  /* font-weight: var(--fw-regular); */
-  /* font-size: 1.25em; */
+.why-us__description {
+  font-size: var(--fs-regular);
 }
 
 /* Small tablets and larger mobile devices (481px - 768px) */
 @media (min-width: 481px) {
-  .SinglePriceGrid {
+  .single-price-grid {
     margin-left: 10%;
     margin-right: 10%;
 
@@ -133,44 +127,31 @@
 
 /* Tablets and small laptops (769px - 1024px) */
 @media (min-width: 769px) {
-  .SinglePriceGrid {
+  .single-price-grid {
     margin-left: 15%;
     margin-right: 15%;
     width: 70%;
-
-    display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-template-areas:
       "header header"
       "price why-us";
   }
-
-  .header__title {
-    color: blue;
-  }
 }
 
 /* Large desktops and high-resolution screens (1025px and up) */
 @media (min-width: 1025px) {
-  .SinglePriceGrid {
+  .single-price-grid {
     margin-left: 20%;
     margin-right: 20%;
     width: 60%;
-  }
-
-  .header__title {
-    color: green;
   }
 }
 
 /* Extra-large screens (1440px and up) */
 @media (min-width: 1440px) {
-  .SinglePriceGrid {
+  .single-price-grid {
     margin-left: 30%;
     margin-right: 30%;
     width: 40%;
-  }
-  .header__title {
-    color: orange;
   }
 }
