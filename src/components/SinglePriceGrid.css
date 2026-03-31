@@ -107,6 +107,17 @@
   /* gap: 12px; */
 }
 
+.sign-up-pricing > * {
+  vertical-align: middle;
+}
+
+.sign-up-pricing-cost {
+  display: inline-block;
+  font-size: 3em;
+  margin: 0;
+  text-align: right;
+}
+
 .sign_up__button {
   background-color: var(--fc-green-400);
   color: var(--fc-teal-100);
