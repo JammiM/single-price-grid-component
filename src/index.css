@@ -1,3 +1,26 @@
+:root {
+  --fc-teal-500: hsl(179, 62%, 43%);
+  --fc-green-400: hsl(71, 73%, 54%);
+
+  --fc-teal-100: hsl(204, 43%, 93%);
+  --fc-green-500: hsl(218, 22%, 67%);
+
+  --fs-main-heading: 1.5em;
+  --fs-sub-heading: 1.25em;
+  --fs-regular: 1em;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  background-color: #e6eff6;
+}
+
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
