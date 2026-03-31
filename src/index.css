@@ -5,6 +5,10 @@
   --fc-teal-100: hsl(204, 43%, 93%);
   --fc-green-500: hsl(218, 22%, 67%);
 
+  /* Reference for darker colour */
+  /* https://stackoverflow.com/a/55330103/2823773 */
+  --fc-teal-500-darker: hsl(from var(--fc-teal-500) h s calc(l - 5));
+
   --fs-main-heading: 1.5em;
   --fs-sub-heading: 1.25em;
   --fs-regular: 1em;

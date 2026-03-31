@@ -68,43 +68,16 @@
 }
 
 .sign_up {
-  background-color: var(--fc-teal-500);
+  background-color: var(--fc-teal-500-darker);
   padding: 40px;
   color: #fff;
   font-weight: var(--fw-bold);
 
   grid-area: price;
-  /* display: grid; */
-  /* align-items: center; */
-  /* gap: 12px; */
 }
 
-.sign_up__heading {
-  /* font-size: var(--fs-sub-heading); */
-}
-
-.sign_up__month {
-  font-size: 3em;
-  line-height: 40px;
-  /* vertical-align: middle; */
-  /* font-size: var(--fs-regular); */
-}
-
-.sign_up__month--muted {
-  font-size: 0.5em;
-  line-height: 20px;
-  min-height: 100px;
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid aqua;
-  /* align-self: safe; */
-  /* vertical-align: middle; */
-
-  /* vertical-align: baseline; */
-  /* vertical-align: baseline; */
-  /* display: grid; */
-  /* align-items: center; */
-  /* gap: 12px; */
+.sign-up-heading {
+  font-size: var(--fs-sub-heading);
 }
 
 .sign-up-pricing > * {
@@ -114,13 +87,24 @@
 .sign-up-pricing-cost {
   display: inline-block;
   font-size: 3em;
-  margin: 0;
-  text-align: right;
+}
+
+.sign-up-pricing-month {
+  color: var(--fc-teal-100);
+}
+
+.sign_up__description {
+  font-size: var(--fs-sub-heading);
 }
 
 .sign_up__button {
   background-color: var(--fc-green-400);
   color: var(--fc-teal-100);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 40px;
 }
 
 .why-us {
