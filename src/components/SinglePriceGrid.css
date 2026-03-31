@@ -1,15 +1,33 @@
 .SinglePriceGrid {
-  border: 1px solid red;
-  padding: 10px;
+  /* border: 1px solid var(--fc-green-500); */
+  /* padding: 10px; */
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   margin-left: 30%;
   margin-right: 30%;
+  font-size: var(--fs-regular);
 
+  box-shadow: 0px 2px 82px -11px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 2px 82px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 82px -11px rgba(0, 0, 0, 0.75);
+
+  /* box-shadow: 10px 10px 5px lightblue; */
+
+  /* border-radius: 20px; */
+  /* font-family: "Karla", sans-serif;
+  font-optical-sizing: auto; */
+  /* .karla-<uniquifier> {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   grid-template-areas:
     "header header"
     "price why-us";
-  gap: 20px;
+  /* gap: 20px; */
 
   @media (max-width: 1024px) {
     margin-left: 10%;
@@ -24,17 +42,93 @@
 }
 
 .header {
-  border: 1px solid blue;
+  padding: 40px;
 
   grid-area: header;
+  display: grid;
+  grid-template: 0.5fr 0.5fr 1fr / 1fr;
 }
 
-.price {
+.header__title {
+  color: var(--fc-teal-500);
+  font-weight: var(--fw-bold);
+  font-size: 1.5em;
+}
+
+.header__sub_title {
+  color: var(--fc-green-400);
+  font-weight: var(--fw-bold);
+  font-size: 1.25em;
+}
+
+.header__paragraph {
+  color: var(--fc-green-500);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-regular);
+}
+
+.sign_up {
+  background-color: var(--fc-teal-500);
+  padding: 40px;
+  color: #fff;
+  font-weight: var(--fw-bold);
+
   grid-area: price;
-  border: 1px solid green;
+  /* display: grid; */
+  /* align-items: center; */
+  /* gap: 12px; */
+}
+
+.sign_up__heading {
+  /* font-size: var(--fs-sub-heading); */
+}
+
+.sign_up__month {
+  font-size: 3em;
+  line-height: 40px;
+  /* vertical-align: middle; */
+  /* font-size: var(--fs-regular); */
+}
+
+.sign_up__month--muted {
+  font-size: 0.5em;
+  line-height: 20px;
+  min-height: 100px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid aqua;
+  /* align-self: safe; */
+  /* vertical-align: middle; */
+
+  /* vertical-align: baseline; */
+  /* vertical-align: baseline; */
+  /* display: grid; */
+  /* align-items: center; */
+  /* gap: 12px; */
+}
+
+.sign_up__button {
+  background-color: var(--fc-green-400);
+  color: var(--fc-teal-100);
 }
 
 .why-us {
+  background-color: var(--fc-teal-500);
+  color: #fff;
+  padding: 40px;
+
   grid-area: why-us;
-  border: 1px solid orange;
+  display: grid;
+  align-items: center;
+  gap: 12px;
+}
+
+.why-us__heading {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sub-heading);
+}
+
+.why-us_description {
+  font-weight: var(--fw-regular);
+  font-size: 1.25em;
 }
