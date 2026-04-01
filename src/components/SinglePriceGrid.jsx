@@ -30,11 +30,15 @@ const SinglePriceGrid = () => {
       </section>
       <section className="why-us">
         <h2 className="why-us__heading">Why Us</h2>
-        <p className="why-us__description">
-          Tutorials by industry experts Peer &amp; expert code review Coding
-          exercises Access to our GitHub repos Community forum Flashcard decks
-          New videos every week
-        </p>
+        <ul className="why-us__description">
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
       </section>
     </div>
   );
