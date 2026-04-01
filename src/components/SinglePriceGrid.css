@@ -91,6 +91,14 @@
   padding: 10px;
   border-radius: 6px;
   font-size: var(--fs-regular);
+
+  &:focus-visible {
+    box-shadow: 0px 2px 82px -11px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 2px 82px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 82px -11px rgba(0, 0, 0, 0.75);
+
+    outline-style: double;
+  }
 }
 
 .why-us {
