@@ -7,7 +7,14 @@
 
   /* Reference for darker colour */
   /* https://stackoverflow.com/a/55330103/2823773 */
-  --fc-teal-500-darker: hsl(from var(--fc-teal-500) h s calc(l - 5));
+  /* --fc-teal-500-darker: hsl(from var(--fc-teal-500) h s calc(l - 5)); */
+
+  /* 
+  Changed hsl() to color-mix 
+  https://css-tricks.com/almanac/functions/c/color-mix/
+  */
+
+  --fc-teal-500-darker: color-mix(in oklab, var(--fc-teal-500) 100%, black 10%);
 
   --fs-main-heading: 1.5em;
   --fs-sub-heading: 1.25em;
