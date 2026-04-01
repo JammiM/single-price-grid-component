@@ -21,7 +21,7 @@ const SinglePriceGrid = () => {
           <p className="sign-up__pricing-cost">&#36;29</p>
           <span class="sign-up__pricing-month">per month</span>
         </div>
-        <p className="sign_up__description">
+        <p className="sign-up__description">
           Full access for less than &#36;1 a day{" "}
         </p>
         <button type="button" className="sign-up__button">
