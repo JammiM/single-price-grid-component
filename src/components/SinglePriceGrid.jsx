@@ -17,9 +17,9 @@ const SinglePriceGrid = () => {
       </section>
       <section className="sign-up section_container">
         <h2 className="sign-up__heading">Monthly Subscription</h2>
-        <div class="sign-up__pricing">
+        <div className="sign-up__pricing">
           <p className="sign-up__pricing-cost">&#36;29</p>
-          <span class="sign-up__pricing-month">per month</span>
+          <span className="sign-up__pricing-month">per month</span>
         </div>
         <p className="sign-up__description">
           Full access for less than &#36;1 a day
