@@ -1,9 +1,11 @@
 :root {
   --fc-teal-500: hsl(179, 61%, 15%);
-  --fc-green-400: hsl(71, 73%, 13%);
 
   --fc-teal-100: hsl(204, 43%, 93%);
   --fc-green-500: hsl(217, 22%, 23%);
+
+  --lime-300: #c4d61e;
+  --lime-700: #43490a;
 
   /* Reference for darker colour */
   /* https://stackoverflow.com/a/55330103/2823773 */
@@ -22,6 +24,10 @@
 
   --fw-regular: 400;
   --fw-bold: 700;
+
+  --ten-units: 0.625rem;
+  --twenty-units: 1.25rem;
+  --fourty-units: 2.5rem;
 }
 
 body {

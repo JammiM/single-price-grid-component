@@ -4,7 +4,7 @@ import "./SinglePriceGrid.css";
 const SinglePriceGrid = () => {
   return (
     <div className="single-price-grid">
-      <section className="header">
+      <section className="header section_container">
         <h1 className="header__title">Join our community</h1>
         <h2 className="header__sub_title">
           30-day, hassle-free money back guarantee
@@ -15,7 +15,7 @@ const SinglePriceGrid = () => {
           skills.
         </p>
       </section>
-      <section className="sign-up">
+      <section className="sign-up section_container">
         <h2 className="sign-up__heading">Monthly Subscription</h2>
         <div class="sign-up__pricing">
           <p className="sign-up__pricing-cost">&#36;29</p>
@@ -28,7 +28,7 @@ const SinglePriceGrid = () => {
           Sign Up
         </button>
       </section>
-      <section className="why-us">
+      <section className="why-us section_container">
         <h2 className="why-us__heading">Why Us</h2>
         <ul className="why-us__description">
           <li>Tutorials by industry experts</li>
