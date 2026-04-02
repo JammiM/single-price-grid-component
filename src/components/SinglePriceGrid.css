@@ -59,13 +59,15 @@
   font-size: var(--fs-sub-heading);
 }
 
-.sign-up__pricing > * {
-  vertical-align: middle;
+.sign-up__pricing h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--ten-units);
 }
 
-.sign-up__pricing-cost {
-  display: inline-block;
-  font-size: 2em;
+.sign-up__pricing h3 span {
+  font-size: 2.3rem;
+  font-weight: 700;
 }
 
 .sign-up__pricing-month {
